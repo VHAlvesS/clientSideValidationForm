@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form action="" id="mainForm">
+      <div>
+        <label for="foundIn">Onde você nos encontrou?</label>
+        <select id="foundIn" name="foundIn">
+          <option value="none" disabled selected>Escolha uma opção</option>
+          <option value="twitter">Twitter</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="tiktok">TikTok</option>
+          <option value="facebook">Facebook</option>
+        </select>
+        <div class="error"></div>
+      </div>
+
+      <div>
+        <label for="name">Nome:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Digite seu nome"
+        />
+        <div class="error"></div>
+      </div>
+
+      <div>
+        <label for="lastName">Sobrenome:</label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Digite seu sobrenome"
+        />
+        <div class="error"></div>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Use seu melhor email"
+        />
+        <div class="error"></div>
+      </div>
+
+      <div>
+        <label for="telephone">Telefone:</label>
+        <input
+          type="telephone"
+          name="telephone"
+          id="telephone"
+          placeholder="Numero de telefone"
+        />
+        <div class="error"></div>
+      </div>
+
+      <div class="genderForm">
+        <legend>Gênero:</legend>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Masculino</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Feminino</label>
+        <div class="error"></div>
+      </div>
+
+      <div>
+        <label for="birthdate">Data de Nascimento:</label>
+        <input type="date" name="birthdate" id="birthdate" />
+        <div class="error"></div>
+      </div>
+
+      <fieldset class="address">
+        <legend>Endereço</legend>
+        <div>
+          <label for="street">Endereço:</label>
+          <input type="text" name="street" id="street" />
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="postCode">CEP:</label>
+          <input type="text" name="postCode" id="postCode" />
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="houseNumber">Número da Casa:</label>
+          <input type="text" name="houseNumber" id="houseNumber" />
+          <div class="error"></div>
+        </div>
+
+        <div>
+          <label for="country">País:</label>
+          <input type="text" name="country" id="country" autocomplete="off" />
+          <div class="suggestionBox"></div>
+          <div class="error"></div>
+        </div>
+        <div>
+          <label for="state">Estado:</label>
+          <input type="text" name="state" id="state" autocomplete="off" />
+          <div class="suggestionBox"></div>
+          <div class="error"></div>
+        </div>
+      </fieldset>
+
+      <button type="submit" id="submit">Enviar</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+:root {
+  --bg-color: #161a1d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #161a1d;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========================================== */
+
+form {
+  width: 90%;
+  max-width: 600px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+form > * {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+select[name="foundIn"] {
+  width: 100%;
+  padding: 0.25rem;
+  font-size: 1rem;
+}
+
+#mainForm input[name="name"],
+#mainForm input[name="lastName"],
+#mainForm input[name="email"],
+#mainForm input[name="telephone"],
+.address > div > input {
+  width: 100%;
+  padding: 0.25rem;
+}
+
+.genderForm {
+  margin-bottom: 1rem;
+}
+
+label[for="gender"],
+label[for="date"] {
+  display: block;
+}
+
+input[type="date"] {
+  padding: 0.5rem;
+}
+
+/* adress */
+
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.address > div {
+  flex: 0 0 48%;
+}
+.address > div > label {
+  display: block;
+}
+
+.error {
+  font-size: 1rem;
+  color: red;
+}
+
+.activeError {
+  border: 3.5px solid red;
+}
+
+.formSuccess {
+  border: 3.5px solid green;
+}
+
+/* === */
+
+.suggestionBox {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  z-index: 99;
+  color: black;
+}
+
+.suggestionBox > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: 450px) {
+  /* Ajuste esse valor conforme necessário */
+  .address {
+    flex-direction: column;
+  }
+}
